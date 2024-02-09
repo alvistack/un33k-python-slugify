@@ -1,0 +1,27 @@
+Source: python-slugify
+Section: python
+Priority: optional
+Standards-Version: 4.5.0
+Maintainer: Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
+Homepage: https://github.com/un33k/python-slugify/tags
+Vcs-Browser: https://github.com/alvistack/un33k-python-slugify
+Vcs-Git: https://github.com/alvistack/un33k-python-slugify.git
+Build-Depends:
+ debhelper,
+ debhelper-compat (= 10),
+ dh-python,
+ fdupes,
+ python3-dev,
+ python3-setuptools,
+
+Package: python3-slugify
+Architecture: all
+Description: Returns unicode slugs
+ A Python slugify application that handles unicode.
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+ ${python3:Depends},
+ python3,
+ python3-text-unidecode (>= 1.3),
+ python3-unidecode (>= 1.1.1),
