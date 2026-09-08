@@ -7,14 +7,14 @@ Unicode-aware slug generation for Python, with explicit transliteration choices.
 
 ## Quickstart
 
-This checkout targets **9.0.0** and has not been published.
-Install from this checkout to use the new APIs demonstrated below.
+**9.0.0 is available on [PyPI](https://pypi.org/project/python-slugify/9.0.0/).**
+Legacy behavior remains the default; improved rules require `algorithm='modern'`.
 See the [migration guide](docs/release-9/migration.md) before changing persisted URLs or keys.
 
 Install **python-slugify**, import **slugify**. Other similarly named distributions are not this package.
 
 ```sh
-python -m pip install -e .
+python -m pip install --upgrade python-slugify
 ```
 
 ```python
@@ -34,8 +34,7 @@ slugify --regex-pattern '[^-a-z0-9_]+' '___This is a test___'
 # ___this-is-a-test___
 ```
 
-The ordinary `python -m pip install python-slugify` command installs the published release,
-which does not yet include the new candidate APIs.
+The examples above work with the published 9.0.0 release. Python 3.10 or newer is required.
 
 ## Python support
 
@@ -44,7 +43,7 @@ which does not yet include the new candidate APIs.
 | 2.7–3.5 | below 5 |
 | 3.6 | 5–6 |
 | 3.7–3.9 | 7–8 (check each release's Requires-Python) |
-| 3.10+ | 9 development series |
+| 3.10+ | 9.x |
 
 The configured release-9 test matrix covers CPython 3.10–3.14 and PyPy 3.11.
 Configuration is not proof of a successful run; see [local verification](docs/release-9/verification.md).
@@ -56,8 +55,8 @@ Older applications can stay on a pinned 8.x release rather than upgrading Python
 | --- | --- | --- |
 | `auto` (default) | Installed Unidecode first, otherwise text-unidecode | Base install includes text-unidecode |
 | `text-unidecode` | Only text-unidecode | Included in base install |
-| `unidecode` | Only Unidecode | `python -m pip install -e '.[unidecode]'` |
-| `anyascii` | Only AnyASCII | `python -m pip install -e '.[anyascii]'` |
+| `unidecode` | Only Unidecode | `python -m pip install 'python-slugify[unidecode]'` |
+| `anyascii` | Only AnyASCII | `python -m pip install 'python-slugify[anyascii]'` |
 
 Explicit selection never silently falls back. A missing selected module raises `ModuleNotFoundError`.
 Backend imports are lazy; `allow_unicode=True` bypasses transliteration entirely.

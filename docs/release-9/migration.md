@@ -1,7 +1,7 @@
 # Migrating to 9.0.0
 
-This checkout is **unpublished**, with version `9.0.0` and no development suffix.
-No commit, push, publication, tag, or public issue reply is part of these local checks.
+**9.0.0 is published on [PyPI](https://pypi.org/project/python-slugify/9.0.0/).**
+Both the wheel and source distribution were validated, and their published SHA-256 hashes matched the local artifacts.
 Historical research remains in [historical-review.md](historical-review.md).
 
 ## The default stays legacy
