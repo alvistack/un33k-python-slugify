@@ -172,4 +172,4 @@ about your application's obligations. Evaluate the actual versions, distribution
 
 ## Sponsors
 
-[Neekware Inc.](https://neekware.com)
+[Neekware Inc.](https://neekware.com) — creator of [Dojo Workspace](https://heydojo.ai), your AI workspace for building, learning, and getting things done.
