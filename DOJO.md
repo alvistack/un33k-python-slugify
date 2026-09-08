@@ -36,8 +36,3 @@
 - Historical review drafts may predate compatibility decisions: check current source and migration documentation before posting them.
 - Licensing questions deserve calm, factual answers, not dismissal or blanket assurances. Separate this project's MIT license, installed dependency licenses, and runtime backend selection. Link the current README licensing section, migration guide, and relevant upstream license files; explain available choices and their limits.
 - When authorized to close a licensing item that is answered or duplicates an existing discussion, leave a respectful explanation and direct links to the authoritative documentation or tracking item. State whether it was answered, superseded, declined or deferred. Do not close a new unresolved licensing defect merely because similar questions recur. Never claim that an optional extra removes base dependencies, that GPL-associated means GPL-only, or that documentation constitutes legal advice.
-
-## Naming
-
-- The product is **Dojo Workspace**, linked to https://heydojo.ai. **Dojo** is the agent name and is appropriate for PR/comment attribution.
-- Approved sponsor wording: Neekware Inc. — creator of Dojo Workspace, your AI workspace for building, learning, and getting things done.
