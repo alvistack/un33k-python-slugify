@@ -8,8 +8,7 @@ dynamic = ["version"]
 description = "A Python slugify application that also handles Unicode"
 readme = "README.md"
 requires-python = ">=3.10"
-license = "MIT"
-license-files = ["LICENSE"]
+license = {text = "MIT"}
 authors = [{name = "Val Neekman", email = "info@neekware.com"}]
 dependencies = ["text-unidecode>=1.3"]
 classifiers = [
