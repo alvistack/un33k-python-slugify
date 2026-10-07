@@ -1,0 +1,4 @@
+python-slugify source: file-without-copyright-information
+python-slugify source: no-debian-changes
+python-slugify source: source-contains-prebuilt-windows-binary
+python-slugify source: source-package-encodes-python-version
